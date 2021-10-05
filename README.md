@@ -9,7 +9,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-  # install_elk.yml
+ 
+ 
+ 
+ # install_elk.yml
 - name: Configure Elk VM with Docker
  hosts: elkserver
  remote_user: sysadmin
@@ -167,6 +170,10 @@ Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running? http://13.78.198.45:5601/
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
+
+
+
 $ cd /etc/ansible
 $ mkdir files
 $ git clone https://github.com/smoo2021/ELK-Project.git
