@@ -167,3 +167,20 @@ Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running? http://13.78.198.45:5601/
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+$ cd /etc/ansible
+$ mkdir files
+$ git clone https://github.com/smoo2021/ELK-Project.git
+$ cp /Project-1-ELK-Stack-Project/ReadMe/Playbooks/*
+
+
+git add
+git commit -m "This is Lisa"
+git config --global user.email "shannonmoorejr@gmail.com"
+git config --global user.name "Shannon"
+git commit -m "This is Lisa"
+git push
+
+cd /etc/ansible
+ $ ansible-playbook install_elk.yml elk
+ $ ansible-playbook install_filebeat.yml webservers
+ $ ansible-playbook install_metricbeat.yml webservers
